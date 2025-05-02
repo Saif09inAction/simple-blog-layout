@@ -1,0 +1,67 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Layout */
+  .container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  main {
+    flex: 2;
+  }
+  
+  aside {
+    flex: 1;
+  }
+  
+  /* Blog Cards */
+  article {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  article:hover {
+    transform: scale(1.02);
+  }
+  
+  a:hover {
+    color: blue;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
